@@ -1,0 +1,407 @@
+/* Import Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+/* Left Section (Logo & Heading) */
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.head {
+    font-size: 22px;
+    font-weight: 600;
+    color: #a435f0;
+    transition: color 0.3s ease-in-out;
+}
+
+.head:hover {
+    color: #6a1bb6;
+}
+
+/* Center Section (Search Bar) */
+.navbar-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.search {
+    font-family: 'Poppins', 'Courier New', Courier, monospace;
+    width: 85%;
+    max-width: 95%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Right Section (Navigation Items) */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.head_course {
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.head_course:hover {
+    color: #6a1bb6;
+}
+
+/* Icons */
+.icon {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.icon:hover {
+    color: #a435f0;
+    transform: scale(1.1);
+}
+
+
+/* Section Styling */
+.categories-section {
+    background-color: white;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+/* Title Styling */
+.section-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #7e22ce;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Categories Container Styling */
+.categories-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Category Button Styling */
+.category-btn {
+    background-color: #7e22ce;
+    color: white;
+    padding: 0.55rem 1.5rem;
+    border-radius: 9999px;
+    cursor: pointer;
+    font-size: 1.125rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-btn:hover {
+    background-color: #6b21a8;
+}
+
+/* Sale Image Container */
+.sale_img {
+    position: relative;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.sale_img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Offer Text Styling */
+.offer {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 7px 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Responsive Styling */
+
+/* For Mobile (up to 480px) */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar-left {
+        margin-bottom: 10px;
+    }
+
+    .navbar-center {
+        width: 100%;
+    }
+
+    .search {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .navbar-right {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .categories-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .category-btn {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .sale_img {
+        margin-top: 15px;
+    }
+
+    .offer {
+        font-size: 5px;
+        top: 67%;
+        left: 10px;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        text-align: center;
+    }
+}
+
+/* For Tablets (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .navbar-left {
+        margin-bottom: 10px;
+    }
+
+    .navbar-center {
+        width: 80%;
+    }
+
+    .search {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .navbar-right {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .categories-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .category-btn {
+        font-size: 1.125rem;
+        padding: 0.6rem 1.2rem;
+    }
+
+    .offer {
+        font-size: 5px;
+        top: 70%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* For Desktops (769px and above) */
+@media (min-width: 769px) {
+    .navbar {
+        flex-direction: row;
+        padding: 20px;
+    }
+
+    .navbar-center {
+        width: 50%;
+    }
+
+    .categories-container {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .category-btn {
+        font-size: 1.25rem;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .offer {
+        font-size: 15px;
+    }
+}
+
+.recommend_head {
+    font-weight: 800;
+    text-align: center;
+}
+
+.recommend_p {
+    font-size: 18px;
+    font-weight: 450;
+    text-align: center;
+    color: rgb(98, 5, 186);
+}
+
+/* Main Container */
+.recommend {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f1f1f1;
+}
+
+/* Heading */
+.recommend_head {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Subheading */
+.recommend_p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.course_container {
+    height: 50%;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    overflow-x: auto;
+}
+
+/* Individual Course Card */
+.course {
+    height: 100%;
+    width: 300px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.course:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+/* Course Image */
+.course-img {
+    width: 250px;
+    height: 150px;
+    padding: 15px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Course Description */
+.course-description {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 0 px;
+}
+
+/* Mentor Names */
+.mentor_name {
+    margin-top: 1%;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    .course_container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .course_container {
+        justify-content: space-around;
+        width: 75%;
+        gap: 10px;
+    }
+}
+
+.course_off {
+    font-weight: bold;
+    display: inline;
+    margin-right: 5px;
+}
+
+.course_old {
+    text-decoration: line-through;
+    display: inline;
+    color: #888888; /* Optional: Makes the old price look faded */
+    font-size: 16px;
+}
