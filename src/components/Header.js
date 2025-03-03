@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 import favicon from '../assets/favicon.png';
 import saleimage from '../assets/Sale_Img.jpg';
-// import '@fortawesome/fontawesome-free/css/all.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function Header() {
     return (
