@@ -211,11 +211,11 @@ body {
     }
 
     .offer {
-        font-size: 5px;
-        top: 67%;
-        left: 10px;
+        font-size: 10px;
+        top: 220%;
+        left: 180px;
         transform: translate(-50%, -50%);
-        width: 50%;
+        width: 70%;
         text-align: center;
     }
 }
