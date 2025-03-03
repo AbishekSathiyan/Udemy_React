@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.css"; // Import the CSS file
+import '../App.css';
 
 const Footer = () => {
   return (
@@ -29,7 +29,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="social-link github"
           >
-            <i class="fa fa-laptop"></i> Portfolio
+            <i className="fa fa-laptop"></i> Portfolio
           </a>
         </div>
         <p className="copyright">&copy; 2025 Udemy Clone. All rights reserved.</p>

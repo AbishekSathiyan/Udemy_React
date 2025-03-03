@@ -406,3 +406,116 @@ body {
     color: #888888; /* Optional: Makes the old price look faded */
     font-size: 16px;
 }
+
+/* Footer Styles */
+.footer {
+    background-color: #1f2937; /* Dark background */
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 50px;
+    padding: 2px;
+    font-size: 16px;
+}
+
+/* Social Links Container */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 2px;
+    margin-bottom: 13px;
+}
+
+/* Social Link Styles */
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    margin-top: 10px;
+    padding: 12px 24px;
+    border-radius: 50px;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+}
+
+
+/* Gradient Hover Animation */
+.social-link::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #ff7eb3, #ffbf7e, #7effc3, #7eafff);
+    background-size: 300% 300%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out, transform 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.social-link:hover::before {
+    opacity: 1;
+    transform: scale(1.2);
+    animation: gradientMove 1.5s linear infinite;
+}
+
+/* Glowing Pulse Effect */
+@keyframes glowPulse {
+    0% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); }
+    50% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.6); }
+    100% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); }
+}
+
+.social-link:hover {
+    animation: glowPulse 1.2s infinite alternate;
+    transform: scale(1.1);
+}
+
+/* Floating Icon Effect */
+.social-link i {
+    font-size: 23px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social-link:hover i {
+    transform: rotate(10deg) translateY(-3px);
+}
+
+/* LinkedIn Button */
+.linkedin {
+    border: 2px solid white;
+}
+
+.linkedin:hover {
+    color: #0077b5;
+    background-color: white;
+}
+
+/* GitHub Button */
+.github {
+    border: 2px solid #f1efef;
+}
+
+.github:hover {
+    color: #333;
+    background-color: white;
+}
+
+/* Animated Gradient Background */
+@keyframes gradientMove {
+    0% { background-position: 34% 50%; }
+    50% { background-position: 10% 50%; }
+    100% { background-position: 35% 50%; }
+}
+
+/* Copyright Section */
+.copyright {
+    margin-top: 10px;
+    font-size: 14px;
+    opacity: 0.8;
+}
